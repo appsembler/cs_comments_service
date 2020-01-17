@@ -10,7 +10,6 @@ common: &default_client
     ssl: <%= ENV['MONGOID_USE_SSL'] || false %>
     ssl_verify: <%= ENV['MONGOID_SSL_VERIFY'] || true %>
     auth_source: <%= ENV['MONGOID_AUTH_SOURCE'] %>
-    replica_set: <%= ENV['MONGOID_REPLICA_SET'] %>
 
 common_uri: &default_uri
   uri: <%= ENV['MONGOHQ_URL'] %>
